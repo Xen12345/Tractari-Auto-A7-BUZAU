@@ -42,6 +42,7 @@ header p {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .call-now:hover {
@@ -62,6 +63,7 @@ header p {
   background-color: #ecf0f1;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .service-card h3 {
@@ -71,12 +73,40 @@ header p {
 
 .service-card p {
   font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.service-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.service-card .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Detalii suplimentare */
+#details {
+  background-color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#details p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 /* Formular de contact */
 #contact {
   background-color: white;
   padding: 40px 0;
+  text-align: center;
 }
 
 form {
@@ -99,7 +129,7 @@ form textarea {
   border-radius: 5px;
 }
 
-form button {
+form .submit-btn {
   padding: 10px 20px;
   background-color: #27ae60;
   color: white;
@@ -108,7 +138,7 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+form .submit-btn:hover {
   background-color: #2ecc71;
 }
 
@@ -122,4 +152,16 @@ footer {
 
 footer p {
   font-size: 1rem;
+}
+
+footer .call-now {
+  font-size: 1.2rem;
+}
+
+/* Responsivitate pentru mobil */
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
